@@ -13,7 +13,7 @@ namespace BTL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202111020133317_Create_Table_Account"; }
+            get { return "202111160105197_Create_Table_Account"; }
         }
         
         string IMigrationMetadata.Source

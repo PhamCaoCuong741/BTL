@@ -126,10 +126,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DonhangsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachhangsController.cs" />
     <Compile Include="Controllers\NhanviensController.cs" />
+    <Compile Include="Controllers\SanphamsController.cs" />
     <Compile Include="Controllers\TaiKhoansController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,10 +139,6 @@
     <Compile Include="Migrations\202111020123445_Create_Table_Taikhoan.cs" />
     <Compile Include="Migrations\202111020123445_Create_Table_Taikhoan.designer.cs">
       <DependentUpon>202111020123445_Create_Table_Taikhoan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111020133317_Create_Table_Account.cs" />
-    <Compile Include="Migrations\202111020133317_Create_Table_Account.Designer.cs">
-      <DependentUpon>202111020133317_Create_Table_Account.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202111020153184_Create_Table_Donhang.cs" />
     <Compile Include="Migrations\202111020153184_Create_Table_Donhang.Designer.cs">
@@ -154,9 +152,18 @@
     <Compile Include="Migrations\202111020210215_Create_Table_Nhanvien.Designer.cs">
       <DependentUpon>202111020210215_Create_Table_Nhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111160039472_Create_Table_Sanpham.cs" />
+    <Compile Include="Migrations\202111160039472_Create_Table_Sanpham.Designer.cs">
+      <DependentUpon>202111160039472_Create_Table_Sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111160105197_Create_Table_Account.cs" />
+    <Compile Include="Migrations\202111160105197_Create_Table_Account.Designer.cs">
+      <DependentUpon>202111160105197_Create_Table_Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Donhang.cs" />
+    <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\Khachhang.cs" />
     <Compile Include="Models\Nhanvien.cs" />
     <Compile Include="Models\PTPMQLYDbContext.cs" />
@@ -220,6 +227,13 @@
     <Content Include="Views\Nhanviens\Details.cshtml" />
     <Content Include="Views\Nhanviens\Edit.cshtml" />
     <Content Include="Views\Nhanviens\Index.cshtml" />
+    <Content Include="Views\Sanphams\Create.cshtml" />
+    <Content Include="Views\Sanphams\Delete.cshtml" />
+    <Content Include="Views\Sanphams\Details.cshtml" />
+    <Content Include="Views\Sanphams\Edit.cshtml" />
+    <Content Include="Views\Sanphams\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -241,9 +255,6 @@
     <EmbeddedResource Include="Migrations\202111020123445_Create_Table_Taikhoan.resx">
       <DependentUpon>202111020123445_Create_Table_Taikhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111020133317_Create_Table_Account.resx">
-      <DependentUpon>202111020133317_Create_Table_Account.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111020153184_Create_Table_Donhang.resx">
       <DependentUpon>202111020153184_Create_Table_Donhang.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111020210215_Create_Table_Nhanvien.resx">
       <DependentUpon>202111020210215_Create_Table_Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111160039472_Create_Table_Sanpham.resx">
+      <DependentUpon>202111160039472_Create_Table_Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111160105197_Create_Table_Account.resx">
+      <DependentUpon>202111160105197_Create_Table_Account.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
